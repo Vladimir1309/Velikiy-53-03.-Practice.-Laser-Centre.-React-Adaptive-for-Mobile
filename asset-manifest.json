@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/static/css/main.d2ef0856.css",
+    "main.js": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/static/js/main.cf54da48.js",
+    "static/js/453.7fd714b8.chunk.js": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/static/js/453.7fd714b8.chunk.js",
+    "static/media/tecla-bold.otf": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/static/media/tecla-bold.adeafa23e24663b606e6.otf",
+    "static/media/tecla-normal.otf": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/static/media/tecla-normal.8ea807ec405f0c6cace3.otf",
+    "index.html": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/index.html",
+    "main.d2ef0856.css.map": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/static/css/main.d2ef0856.css.map",
+    "main.cf54da48.js.map": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/static/js/main.cf54da48.js.map",
+    "453.7fd714b8.chunk.js.map": "/Velikiy-53-03.-Practice.-Laser-Centre.-React-Adaptive-for-Mobile/static/js/453.7fd714b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2ef0856.css",
+    "static/js/main.cf54da48.js"
+  ]
+}
