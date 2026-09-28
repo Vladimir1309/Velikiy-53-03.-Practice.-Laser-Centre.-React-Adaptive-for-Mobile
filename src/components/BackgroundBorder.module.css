@@ -1,0 +1,99 @@
+.backgroundborder {
+  border-radius: var(--br-16);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-24) var(--padding-24) 46.8px;
+  position: relative;
+  isolation: isolate;
+  gap: var(--gap-10_9);
+  grid-column: 1;
+  grid-row: 1;
+  text-align: left;
+  font-size: var(--fs-14);
+  color: var(--color-firebrick);
+  font-family: var(--font-open-sans);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.backgroundborder:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+  z-index: 2;
+}
+.overlayshadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-16);
+  background-color: var(--color-gray-1400);
+  z-index: 0;
+  flex-shrink: 0;
+}
+.div {
+  position: relative;
+  font-size: var(--fs-16);
+  line-height: var(--lh-24);
+  z-index: 1;
+  flex-shrink: 0;
+}
+.container,
+.div2 {
+  align-self: stretch;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-0) var(--padding-0) var(--padding-5_7);
+  z-index: 2;
+  flex-shrink: 0;
+  color: var(--color-dimgray-200);
+}
+.div2 {
+  position: relative;
+  line-height: var(--lh-22_8);
+}
+.horizontalborder {
+  align-self: stretch;
+  border-top: var(--border-2);
+  padding: var(--padding-12) var(--padding-0) var(--padding-0);
+  z-index: 3;
+  flex-shrink: 0;
+  color: var(--color-gray-300);
+  font-family: var(--font-arial);
+}
+.container2,
+.horizontalborder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.b,
+.container2,
+.container3 {
+  align-self: stretch;
+}
+.b {
+  position: relative;
+  line-height: var(--lh-20);
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--fs-12);
+  color: var(--color-gray-200);
+  font-family: var(--font-open-sans);
+}
+.div3 {
+  align-self: stretch;
+  position: relative;
+  line-height: var(--lh-16);
+}

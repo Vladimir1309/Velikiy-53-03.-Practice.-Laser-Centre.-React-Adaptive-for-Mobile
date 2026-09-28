@@ -1,0 +1,127 @@
+﻿.overlayhorizontalborder {
+  align-self: stretch;
+  background-color: var(--color-gray-900);
+  border-top: 1px solid var(--color-gray-800);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-0);
+  max-width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--fs-18);
+  color: var(--color-firebrick);
+  font-family: var(--font-arial);
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-20) var(--padding-16);
+  box-sizing: border-box;
+  gap: var(--gap-20);
+  max-width: var(--max-w-1280);
+  margin: 0 auto;
+}
+.container2 {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-24);
+  max-width: 100%;
+}
+.container3 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 7.2px;
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text {
+  position: relative;
+  line-height: var(--lh-28);
+}
+.container5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--fs-12);
+  color: var(--color-gray-700);
+  font-family: var(--font-open-sans);
+}
+.statDescription {
+  position: relative;
+  line-height: var(--lh-16);
+}
+.container6 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 6.6px;
+}
+.container9 {
+  align-self: stretch;
+  gap: 7px;
+}
+.button,
+.container12,
+.container9 {
+  display: flex;
+  align-items: center;
+}
+.container12 {
+  align-self: stretch;
+  gap: 7.4px;
+}
+.button {
+  border-radius: var(--br-8);
+  background-color: var(--color-firebrick);
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-10) var(--padding-20);
+  text-align: center;
+  font-size: var(--fs-14);
+  color: var(--color-white);
+  font-family: var(--font-open-sans);
+}
+.text7 {
+  position: relative;
+  line-height: var(--lh-20);
+  font-weight: 600;
+}
+@media screen and (max-width: 1725px) {
+  .container {
+    justify-content: center;
+  }
+  .container,
+  .container2 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1325px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--gap-12);
+  }
+  .container2 {
+    align-self: stretch;
+    flex-direction: column;
+    gap: var(--gap-24);
+  }
+  .button {
+    align-self: flex-start;
+  }
+}

@@ -1,0 +1,117 @@
+.backgroundbordershadow {
+  box-shadow: var(--shadow-drop);
+  border-radius: var(--br-16);
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  isolation: isolate;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+  font-size: var(--fs-14);
+  color: var(--color-white);
+  font-family: var(--font-open-sans);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.backgroundbordershadow:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+  z-index: 2;
+}
+.container {
+  align-self: stretch;
+  height: var(--height-266_2);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.container2,
+.icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.icon {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-20) var(--padding-0);
+  opacity: var(--opacity-0);
+}
+.button {
+  border-radius: var(--br-8);
+  background-color: var(--color-firebrick);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-10) var(--padding-20);
+}
+.productTitle {
+  position: relative;
+  line-height: var(--lh-20);
+  font-weight: 600;
+}
+.container4 {
+  align-self: stretch;
+  padding: var(--padding-12);
+  gap: var(--gap-2);
+  z-index: 0;
+  text-align: left;
+  font-size: var(--fs-12);
+  color: var(--color-firebrick);
+}
+.container4,
+.container5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container5,
+.container6,
+.div {
+  align-self: stretch;
+}
+.div {
+  position: relative;
+  line-height: var(--lh-16);
+  font-weight: 600;
+}
+.container6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--fs-14);
+  color: var(--color-gray-300);
+}
+.div2 {
+  align-self: stretch;
+  position: relative;
+  line-height: var(--lh-20);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+  .backgroundbordershadow {
+    border: 1.6px solid transparent;
+  }
+  .container {
+    height: 225.65px;
+  }
+}

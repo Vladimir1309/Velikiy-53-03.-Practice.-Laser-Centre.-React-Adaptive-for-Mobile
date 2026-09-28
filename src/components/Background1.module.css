@@ -1,0 +1,45 @@
+﻿.background,
+.container {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.background {
+  background-color: var(--color-white);
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-0);
+  flex-shrink: 0;
+  z-index: 2;
+  margin-top: -0.1px;
+  position: relative;
+  text-align: center;
+  font-size: var(--fs-36);
+  color: var(--color-firebrick);
+  font-family: var(--font-arial);
+}
+.container {
+  width: 100%;
+  max-width: var(--max-w-1280);
+  margin: 0 auto;
+  padding: var(--padding-0) var(--padding-16);
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0;
+  row-gap: var(--gap-20);
+}
+@media screen and (max-width: 1325px) {
+}
+@media screen and (max-width: 900px) {
+}
+@media screen and (max-width: 450px) {
+  .background {
+    margin-top: -3.6px;
+  }
+  .container {
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: stretch;
+  }
+}

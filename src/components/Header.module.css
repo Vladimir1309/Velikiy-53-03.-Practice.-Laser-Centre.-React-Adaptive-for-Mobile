@@ -1,0 +1,173 @@
+﻿.header {
+  align-self: stretch;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-0);
+  position: sticky;
+  isolation: isolate;
+  top: 0;
+  z-index: 99;
+  box-sizing: border-box;
+}
+.headershadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: var(--shadow-drop);
+  background-color: var(--color-gray-1400);
+  z-index: 0;
+  flex-shrink: 0;
+}
+.container {
+  width: 100%;
+  max-width: var(--max-w-1280);
+  align-self: stretch;
+  height: var(--height-64);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-20);
+  z-index: 1;
+  flex-shrink: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.div,
+.logoNewsvgIcon {
+  height: var(--height-36);
+}
+.div {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 128px;
+  flex-shrink: 0;
+}
+.logoNewsvgIcon {
+  width: 128px;
+  position: relative;
+}
+a.button,
+a.link,
+a.button4 {
+  text-decoration: none;
+  color: inherit;
+}
+a.button:hover,
+a.link:hover {
+  color: var(--color-firebrick);
+}
+a.button4:hover {
+  background-color: #a30016;
+}
+a.button4 {
+  color: var(--color-white);
+}
+.button,
+.container2 {
+  display: flex;
+  align-items: center;
+}
+.container2 {
+  margin: 0;
+  gap: 15.6px;
+  text-align: center;
+  font-size: var(--fs-14);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-open-sans);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  min-width: 0;
+}
+.button {
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Скрывается на средних ширинах — см. медиазапрос ниже. */
+.navSecondary {
+  display: flex;
+}
+.text {
+  position: relative;
+  line-height: var(--lh-20);
+  font-weight: 600;
+}
+.button4,
+.link {
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  align-items: flex-start;
+  text-align: left;
+  color: var(--color-firebrick);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.button4 {
+  border-radius: var(--br-8);
+  background-color: var(--color-firebrick);
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-10) var(--padding-20);
+  color: var(--color-white);
+  white-space: nowrap;
+}
+@media screen and (max-width: 1725px) {
+  .header {
+    padding-left: var(--padding-40);
+    padding-right: var(--padding-40);
+    box-sizing: border-box;
+  }
+  .container2 {
+    gap: var(--gap-16);
+  }
+}
+@media screen and (max-width: 1325px) {
+  .header {
+    padding-left: var(--padding-20);
+    padding-right: var(--padding-20);
+    box-sizing: border-box;
+  }
+  .container2 {
+    gap: var(--gap-12);
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* На средних ширинах прячем «О нас» и «Контакты»: они есть в мобильном меню. */
+  .navSecondary {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header {
+    padding-left: var(--padding-20);
+    padding-right: var(--padding-20);
+    box-sizing: border-box;
+  }
+  .container2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    padding-left: var(--padding-16);
+    padding-right: var(--padding-16);
+    box-sizing: border-box;
+  }
+  .logoNewsvgIcon,
+  .div {
+    width: 112px;
+    max-width: 112px;
+  }
+}

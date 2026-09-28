@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700&display=swap");
+
+@font-face {
+  font-family: "Tecla";
+  src: url("./assets/fonts/tecla-normal.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tecla";
+  src: url("./assets/fonts/tecla-bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+  overflow-x: hidden;
+}
+
+button {
+  border: 0;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover,
+a[class*="button"]:hover,
+a[class*="link"]:hover {
+  filter: brightness(0.94);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-firebrick);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Липкая шапка (64px) не должна перекрывать секции при переходе по якорям. */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Common Style Variables */
+
+  /* Color */
+  --color-darkgoldenrod: #8b6914;
+  --color-darkgray: #99a1af;
+  --color-darkslategray-100: #444;
+  --color-darkslategray-200: #3d3d3d;
+  --color-deepskyblue: #229ed9;
+  --color-dimgray-100: #666;
+  --color-dimgray-200: #555;
+  --color-firebrick: #c0001a;
+  --color-gainsboro-100: #e8e8e8;
+  --color-gainsboro-200: #e5e7eb;
+  --color-gray-100: #fafafa;
+  --color-gray-200: #888;
+  --color-gray-300: #222;
+  --color-gray-400: #111;
+  --color-gray-500: rgba(34, 34, 34, 0.5);
+  --color-gray-600: rgba(0, 0, 0, 0.1);
+  --color-gray-700: rgba(255, 255, 255, 0.6);
+  --color-gray-800: rgba(255, 255, 255, 0.1);
+  --color-gray-900: rgba(0, 0, 0, 0.55);
+  --color-gray-1000: rgba(255, 255, 255, 0.5);
+  --color-gray-1100: rgba(255, 255, 255, 0.8);
+  --color-gray-1200: rgba(255, 255, 255, 0.7);
+  --color-gray-1300: rgba(255, 255, 255, 0.2);
+  --color-gray-1400: rgba(255, 255, 255, 0);
+  --color-lightgray: #d1d5dc;
+  --color-mediumspringgreen: #25d366;
+  --color-slategray: #6a7282;
+  --color-white: #fff;
+  --color-whitesmoke-100: #f8f8f8;
+  --color-whitesmoke-200: #f5f5f5;
+  --color-whitesmoke-300: #f3f4f6;
+  --color-whitesmoke-400: #f0f0f2;
+
+  /* Gap */
+  --gap-2: 2px;
+  --gap-3: 3px;
+  --gap-4: 4px;
+  --gap-6: 6px;
+  --gap-8: 8px;
+  --gap-12: 12px;
+  --gap-16: 16px;
+  --gap-20: 20px;
+  --gap-24: 24px;
+  --gap-32: 32px;
+  --gap-40: 40px;
+  --gap-48: 48px;
+  --gap-10_9: 10.9px;
+  --gap-2_4: 2.4px;
+  --gap-2_7: 2.7px;
+  --gap-3_1: 3.1px;
+  --gap-6_5: 6.5px;
+
+  /* Padding */
+  --padding-0: 0px;
+  --padding-1: 1px;
+  --padding-2: 2px;
+  --padding-4: 4px;
+  --padding-6: 6px;
+  --padding-8: 8px;
+  --padding-10: 10px;
+  --padding-11: 11px;
+  --padding-12: 12px;
+  --padding-16: 16px;
+  --padding-19: 19px;
+  --padding-20: 20px;
+  --padding-22: 22px;
+  --padding-24: 24px;
+  --padding-26: 26px;
+  --padding-28: 28px;
+  --padding-30: 30px;
+  --padding-31: 31px;
+  --padding-32: 32px;
+  --padding-36: 36px;
+  --padding-40: 40px;
+  --padding-48: 48px;
+  --padding-60: 60px;
+  --padding-158: 158px;
+  --padding-162: 162px;
+  --padding-317: 317px;
+  --padding-325: 325px;
+  --padding-635: 635px;
+  --padding-10_5: 10.5px;
+  --padding-11_5: 11.5px;
+  --padding-12_5: 12.5px;
+  --padding-2_5: 2.5px;
+  --padding-5_7: 5.7px;
+  --padding-7_5: 7.5px;
+  --padding-8_5: 8.5px;
+
+  /* BorderRadius */
+  --br-8: 8px;
+  --br-12: 12px;
+  --br-16: 16px;
+
+  /* Font */
+  --font-arial: "Tecla", Arial, sans-serif;
+  --font-open-sans: "Tecla", "Open Sans", Arial, sans-serif;
+
+  /* FontSize */
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-19: 19px;
+  --fs-20: 20px;
+  --fs-22: 22px;
+  --fs-24: 24px;
+  --fs-29: 29px;
+  --fs-30: 30px;
+  --fs-36: 36px;
+  --fs-48: 48px;
+  --fs-16_8: 16.8px;
+
+  /* Borders */
+  --border-1: 2px solid var(--color-firebrick);
+  --border-2: 1px solid var(--color-whitesmoke-300);
+  --border-11: 1px solid var(--color-gainsboro-200);
+
+  /* Shadows */
+  --shadow-drop:
+    0px 1px 3px var(--color-gray-600), 0px 1px 2px -1px var(--color-gray-600);
+
+  /* WidthHeights */
+  --height-4: 4px;
+  --height-20: 20px;
+  --height-22: 22px;
+  --height-23: 23px;
+  --height-24: 24px;
+  --height-26: 26px;
+  --height-32: 32px;
+  --height-36: 36px;
+  --height-40: 40px;
+  --height-56: 56px;
+  --height-60: 60px;
+  --height-64: 64px;
+  --height-80: 80px;
+  --height-200: 200px;
+  --height-266_2: 266.2px;
+  --max-w-288: 288px;
+  --max-w-312: 312px;
+  --max-w-1280: 1280px;
+  --min-w-234: 234px;
+  --min-w-265: 265px;
+  --min-w-300: 300px;
+  --width-12: 12px;
+  --width-14: 14px;
+  --width-18: 18px;
+  --width-32: 32px;
+  --width-40: 40px;
+  --width-48: 48px;
+  --width-56: 56px;
+  --width-186: 186px;
+  --width-1280: 1280px;
+
+  /* LineHeights */
+  --lh-16: 16px;
+  --lh-20: 20px;
+  --lh-22: 22px;
+  --lh-24: 24px;
+  --lh-26: 26px;
+  --lh-28: 28px;
+  --lh-29: 29px;
+  --lh-30: 30px;
+  --lh-32: 32px;
+  --lh-36: 36px;
+  --lh-40: 40px;
+  --lh-48: 48px;
+  --lh-60: 60px;
+  --lh-22_8: 22.8px;
+  --lh-23_1: 23.1px;
+
+  /* LetterSpacings */
+  --ls-0_3: 0.3px;
+  --ls-0_35: 0.35px;
+  --ls-1_2: 1.2px;
+
+  /* Opacities */
+  --opacity-0: 0;
+
+  --left-0: 0px;
+  --left-26: 26px;
+  --top-0: 0px;
+  --top-40: 40px;
+}

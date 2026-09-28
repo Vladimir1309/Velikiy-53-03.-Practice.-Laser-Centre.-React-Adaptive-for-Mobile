@@ -1,0 +1,38 @@
+.container {
+  gap: var(--gap-4);
+  text-align: left;
+  font-size: var(--fs-12);
+  color: var(--color-gray-200);
+  font-family: var(--font-open-sans);
+}
+.container,
+.container2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container {
+  min-width: 0;
+}
+.text {
+  position: relative;
+  letter-spacing: var(--ls-0_3);
+  line-height: var(--lh-16);
+  text-transform: uppercase;
+}
+.container3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--fs-14);
+  color: var(--color-gray-300);
+}
+.text2 {
+  position: relative;
+  line-height: var(--lh-20);
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  font-weight: 600;
+}

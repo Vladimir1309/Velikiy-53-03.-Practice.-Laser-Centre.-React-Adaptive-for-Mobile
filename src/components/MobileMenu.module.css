@@ -1,0 +1,136 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Иконка "☰" / "✕". В макете это <h3>, поэтому сбрасываем h3-стили. */
+.toggle {
+  margin: 0;
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: var(--font-open-sans);
+  color: var(--color-gray-300);
+  cursor: pointer;
+  user-select: none;
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: var(--padding-20);
+  padding: 8px;
+  border: 0;
+  background: transparent;
+  color: var(--color-gray-300);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.close:focus-visible {
+  outline: 2px solid var(--color-firebrick);
+  outline-offset: 2px;
+  border-radius: var(--br-8);
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--color-firebrick);
+  outline-offset: 4px;
+  border-radius: var(--br-8);
+}
+
+/* Полноэкранная панель поверх страницы. */
+.panel {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 96px var(--padding-20) var(--padding-32);
+  box-sizing: border-box;
+  overflow-y: auto;
+  animation: panel-in 180ms ease-out;
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-24);
+  width: 100%;
+}
+
+.navLink {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: var(--font-arial);
+  color: var(--color-gray-300);
+  text-decoration: none;
+}
+
+.navLink:hover,
+.navLink:focus-visible {
+  color: var(--color-firebrick);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-16);
+  width: 100%;
+  margin-top: auto;
+  padding-top: var(--padding-32);
+}
+
+.phone {
+  font-size: var(--fs-18);
+  line-height: var(--lh-28);
+  font-weight: 600;
+  font-family: var(--font-open-sans);
+  color: var(--color-firebrick);
+  text-decoration: none;
+}
+
+.callback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  border-radius: var(--br-8);
+  background-color: var(--color-firebrick);
+  padding: var(--padding-12) var(--padding-20);
+  font-size: var(--fs-14);
+  line-height: var(--lh-20);
+  font-weight: 600;
+  font-family: var(--font-open-sans);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* На широких экранах полноэкранное меню не нужно — там навигация в шапке. */
+@media screen and (min-width: 901px) {
+  .root {
+    display: none;
+  }
+}
